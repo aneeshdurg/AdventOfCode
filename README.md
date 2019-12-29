@@ -50,3 +50,15 @@ have sufficied.
 The intcode challenges are really fun. I spent some time trying to refactor my
 if statement into an array of closures for cleaner syntax, but no dice. Maybe
 this could be cleaned up with a macro, but for now I'll leave it alone.
+
+## Day 6
+
+Took me a moment to remember how to find shortest paths in a tree :P, from there
+it was just a matter of coming up with a quick graph representation and
+implementing BFS in rust. The lifetimes made memory management a breeze! The
+ability to use `#[derive(Debug)]` for printing has also been really nice.
+
+I've also been comparing the runtimes of all my solutions both in release and
+debug mode and it's cool how fast optimized rust can be! I don't think I
+could've
+easily written a faster C/C++ solution for most of these questions.
