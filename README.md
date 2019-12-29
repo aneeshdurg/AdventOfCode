@@ -41,3 +41,12 @@ For practice I re-implemented the python solution in rust.
 
 Maybe the takeaway here is that I shouldn't over optimize my solutions when I
 know I have clear bounds on what's required.
+
+I realize later that using an array instead of a hashmap in my solution would
+have sufficied.
+
+## Day 5
+
+The intcode challenges are really fun. I spent some time trying to refactor my
+if statement into an array of closures for cleaner syntax, but no dice. Maybe
+this could be cleaned up with a macro, but for now I'll leave it alone.
