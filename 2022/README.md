@@ -41,3 +41,14 @@ all in all, it felt like becoming productive with it was a very fast experience.
 In terms of ease, it felt reminiscent of python. I could even see myself using
 it as a scripting language in general, though I'm still not sure if it's better
 than python for that.
+
+# Day 5 - Scheme
+
+The first time I tried to learn a lisp was in my first year of undergrad, and I
+honestly did not understand anything. I briefly became interested in lisps again
+when I took PL, but I never really wrote a "real" program with it. Now, having
+used it for real (albeit, probably not completely idomatically), I'm not a fan.
+
+As a language - it's super cool and elegant. As a tool to solve problems, parts
+of it felt painful. That being said, I think it might be fun to revisit the lisp
+family later in this challenge.
