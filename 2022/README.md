@@ -52,3 +52,10 @@ used it for real (albeit, probably not completely idomatically), I'm not a fan.
 As a language - it's super cool and elegant. As a tool to solve problems, parts
 of it felt painful. That being said, I think it might be fun to revisit the lisp
 family later in this challenge.
+
+# Day 6 - Nim
+
+Trying nim has been on my todo list for years. I have mixed feelings about it.
+It feels like c and python combined, but the type system actually seems pretty
+cool. I did not appreciate that they didn't just call sequence "vector". Maybe a
+sequence is not the same as a vector under the hood? Easy day overall.
