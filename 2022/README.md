@@ -59,3 +59,11 @@ Trying nim has been on my todo list for years. I have mixed feelings about it.
 It feels like c and python combined, but the type system actually seems pretty
 cool. I did not appreciate that they didn't just call sequence "vector". Maybe a
 sequence is not the same as a vector under the hood? Easy day overall.
+
+# Day 7 - Ada
+
+Pretty cool. The type system is very neat, and totally not what I expected. For
+some reason, I thought Ada was C but fancier, but this is much much nicer than
+C. Some of it feels more verbose than necessary, but overall, I think it seems
+pretty usable. I'd definitely like to revisit Ada and try rwriting something
+more complex in the future.
