@@ -12,6 +12,7 @@ strfalse: db 'f', 0
 strtrue: db 't', 0
 endl: db 0xa, 0
 message: db "total visible h = %d", 10, 0
+lengthmsg: db "size = %d", 10, 0
 
 section .text
 global main
@@ -31,6 +32,68 @@ get_tree_data:
   mov al, byte [rdi + r9]
 
   pop r12
+  ret
+
+; rdi tree data
+; rsi grid length
+; rdx y
+; rcx x
+tree_visible_vert:
+  push r12
+  push r13
+  push r14
+  push r15
+
+  mov r12,rdx  ; y
+  mov r13,rcx ; x
+
+  call get_tree_data
+  mov r15,rax ; byte to compare
+
+  mov r14,0
+.loop_above:
+  cmp r14,r12
+  je .rett ; nothing greater on above, return true
+
+  mov rdx,r14
+  mov rcx,r13
+  call get_tree_data
+
+  cmp al,r15b
+  jge .check_below ; something greater above, check below
+
+  inc r14
+  jmp .loop_above
+
+.check_below:
+  mov r14,r12
+  inc r14
+.loop_below:
+  cmp r14,rsi
+  je .rett ; nothing greater on below, return true
+
+  mov rdx,r14
+  mov rcx,r13
+  call get_tree_data
+
+  cmp al,r15b
+  jge .retf ; something greater on below, return false
+
+  inc r14
+  jmp .loop_below
+
+.retf:
+  mov rax,0
+  jmp .finish
+.rett:
+  mov rax,1
+  jmp .finish
+.finish:
+  pop r15
+  pop r14
+  pop r13
+  pop r12
+
   ret
 
 ; rdi tree data
@@ -137,12 +200,17 @@ print_string:
   push rdi
   call tree_visible_hrzt
   cmp rax,0
-  je .printfalse
+  jne .printtrue
+  mov rdx,r12
+  mov rcx,r13
+  call tree_visible_vert
+  cmp rax,0
+  jne .printtrue
+  mov rsi,strfalse
+  jmp .doprint
+.printtrue:
   mov rsi,strtrue
   inc r14
-  jmp .doprint
-.printfalse:
-  mov rsi,strfalse
 .doprint:
   mov rax,1
   mov rdi,1
@@ -171,13 +239,11 @@ print_string:
 .end:
 
   sub   rsp, 8             ; re-align the stack to 16 before calling another function
-
   ; Call printf.
   mov   esi, r14d    ; "%x" takes a 32-bit unsigned int
   lea   rdi, [rel message]
   xor   eax, eax           ; AL=0  no FP args in XMM regs
   call  printf
-
   add   rsp, 8
 
   pop r14
@@ -212,7 +278,7 @@ mov r8, rax           ; rax holds opened file descriptor
                       ; it is the fourth argument of mmap
 mov rax, 9            ; mmap number
 mov rdi, 0            ; operating system will choose mapping destination
-mov rsi, 4096         ; page size
+mov rsi, 16384         ; page size
 mov rdx, PROT_READ    ; new memory region will be marked read only
 mov r10, MAP_PRIVATE  ; pages will not be shared
 
