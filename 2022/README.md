@@ -67,3 +67,8 @@ some reason, I thought Ada was C but fancier, but this is much much nicer than
 C. Some of it feels more verbose than necessary, but overall, I think it seems
 pretty usable. I'd definitely like to revisit Ada and try rwriting something
 more complex in the future.
+
+# Day 8 - x86_64
+
+I've been unable to complete this one. Maybe learning assembly in 1hr isn't as
+easy as I thought. Dissapointing, but I guess I have to move on.
