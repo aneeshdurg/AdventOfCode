@@ -72,3 +72,8 @@ more complex in the future.
 
 I've been unable to complete this one. Maybe learning assembly in 1hr isn't as
 easy as I thought. Dissapointing, but I guess I have to move on.
+
+So I spent some extra time and got part 1 working! It was quite the struggle and
+I definitely learned a lot about how to approach learning something like
+assembly. I think I'll skip part 2 though - I think I know how I would do it,
+but I've spent far too much time on this already. I'm a full 2 days behind!
