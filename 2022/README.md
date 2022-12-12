@@ -91,3 +91,12 @@ first half made the second half pretty easy.
 F# is a weird language. I'm not sure what the intended usecase really is. It's
 got some cool syntax, but it just feels like haskell for dotnet, but not quite.
 Either way, it was still fun to use, and felt quick to learn.
+
+# Day 11 - perl
+
+Cool problem today. Got to flex some math skills with the realization that we
+can just do all caluclations % the LCM of all the divisibility tests (but just
+taking the product of the all the divisibility tests was good enough). Perl as a
+language was somewhat lame - I can see why python is more prevalent in this day
+and age. That being said, it has cool ideas, and I see why it was an important
+historical stepping stone.
