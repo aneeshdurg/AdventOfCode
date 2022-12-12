@@ -77,3 +77,17 @@ So I spent some extra time and got part 1 working! It was quite the struggle and
 I definitely learned a lot about how to approach learning something like
 assembly. I think I'll skip part 2 though - I think I know how I would do it,
 but I've spent far too much time on this already. I'm a full 2 days behind!
+
+# Day 9 - Zig
+
+I've used zig before and found it to be underwhelming. But the allocator stuff
+is pretty cool (though rust's lifetimes is a much better approach). The standard
+library has come a long way since when I first tried it, and the stdlib is
+pretty easy to work with. The problem itself was also fun - my design for the
+first half made the second half pretty easy.
+
+# Day 10 - F\#
+
+F# is a weird language. I'm not sure what the intended usecase really is. It's
+got some cool syntax, but it just feels like haskell for dotnet, but not quite.
+Either way, it was still fun to use, and felt quick to learn.
