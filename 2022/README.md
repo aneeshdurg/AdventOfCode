@@ -100,3 +100,21 @@ taking the product of the all the divisibility tests was good enough). Perl as a
 language was somewhat lame - I can see why python is more prevalent in this day
 and age. That being said, it has cool ideas, and I see why it was an important
 historical stepping stone.
+
+# Day 12 - cypher
+
+Today's problem seemed like it could be solved by graphs. As someone who works
+on implementing openCypher professionally, using cypher seemed like a
+no-brainer. I can't say I learned anything super new in this process, but
+implementing the data ingest in cypher itself was a fun excercise. The graph
+creation queries were a little slow, but the `shortestPath` queries were really
+fast!
+
+# Day 13 - lua
+
+I've always wanted to learn lua so I can start moving my neovim config from
+vimscript to lua. Pretty cool language, I guess the main advantage of lua vs
+python is the lighterweight runtime + less complexity?
+
+As far as scripting in general goes, it was fine. I don't think I could have
+solved this significantly faster in python or something.
