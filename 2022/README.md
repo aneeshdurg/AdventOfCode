@@ -125,3 +125,8 @@ Learning ruby's been on my TODO list for a long time. It's alright - feels like
 JS but with looser syntax. I honestly cannot see the hype behind it - maybe the
 low barrier of entry and the very forgiving syntax? It feels like theres many
 ways to do basic things.
+
+# Day 15 - go
+
+I've done a little go in the past, but I'm always amazed by how easy it is to
+parallelize code. Overall, a solid language, with some minor quirks.
