@@ -130,3 +130,19 @@ ways to do basic things.
 
 I've done a little go in the past, but I'm always amazed by how easy it is to
 parallelize code. Overall, a solid language, with some minor quirks.
+
+# Day 16 - groovy
+
+Part1 was fun, part2 was hard and I couldn't get a fast working solution. Groovy
+is cool, but the actors model is a bit complex. go was a lot better at making
+multi-threading intuitive.
+
+# Day 21
+
+
+Life/work got in the way for the last few days. I stumbled a bit on my "learn
+new languages" quest today and just used python/c++. But to make my life hard I
+tried to generate a c++ solution with python. My initial goal was to make a
+program that evaluates everything as constexprs, but for part2 that proved
+difficult, so I gave up and brute forced a solution. The total runtime is under
+a second anyway.
