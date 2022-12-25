@@ -65,7 +65,7 @@ sequence is not the same as a vector under the hood? Easy day overall.
 Pretty cool. The type system is very neat, and totally not what I expected. For
 some reason, I thought Ada was C but fancier, but this is much much nicer than
 C. Some of it feels more verbose than necessary, but overall, I think it seems
-pretty usable. I'd definitely like to revisit Ada and try rwriting something
+pretty usable. I'd definitely like to revisit Ada and try writing something
 more complex in the future.
 
 # Day 8 - x86_64
@@ -137,8 +137,7 @@ Part1 was fun, part2 was hard and I couldn't get a fast working solution. Groovy
 is cool, but the actors model is a bit complex. go was a lot better at making
 multi-threading intuitive.
 
-# Day 21
-
+# Day 21 - C++ (+ python)
 
 Life/work got in the way for the last few days. I stumbled a bit on my "learn
 new languages" quest today and just used python/c++. But to make my life hard I
@@ -146,3 +145,59 @@ tried to generate a c++ solution with python. My initial goal was to make a
 program that evaluates everything as constexprs, but for part2 that proved
 difficult, so I gave up and brute forced a solution. The total runtime is under
 a second anyway.
+
+# Day 25 - Haskell
+
+It's been a while since I've used haskell. It's always so fun to use. Between
+Haskell and F# though, I felt more immediately productive with F# - the lack of
+having to worry about introducing side effects for printing was nice. That being
+said, functional programming makes it feel so easy to write code that feels
+easily testable.
+
+## Conclusion
+
+Overall, this is the end of the road. I probably won't go back and do the days I
+missed/didn't finish, but it was a cool experience overall. Here's a brief
+summary of things.
+
+* Favorite langauges learned: Julia, Ada - definitely want to try using these
+  more.
+* Favorite language used overall: go, cypher, python - python is GOATed, cypher
+  is really really good at expressing graph traversal intuitively, go's
+  multithreading ease is unmatched.
+* Most dissapointing languages: scheme, perl - maybe I didn't approach scheme
+  correctly, I was editing it in vim afterall. That being said, it felt so
+  needlessly painful to write. perl felt overhyped, it was like bash++ IMO.
+
+Some other observations:
+
+* On most days I didn't feel like the choice of language made much of a
+  difference. On the days it mattered it REALLY made a difference. Makes me sad
+  that integrating multiple languages in a single project is so hard. I'd love
+  to write code that does it's threading via go, and then switches over to
+  python for less perf critical sections or something.
+* Verbosity is not a barrier to entry, but terseness is.
+* python is probably the greatest programming language of all time, and
+  languages inspired by it, like Julia and Nim, feel like the most likely
+  languages to achieve mainstream adoption in the future.
+* Functional programming is a really good paradigm for writing code that can be
+  well tested.
+* AoC problems are nice, but not every problem is equal in that some problems
+  made me feel like I really learned the language at hand, and some felt like I
+  barely scratched the surface. Also, doing problems in a new language every day
+  really made everything take longer - that felt frustrating on some days.
+* Languages that were easy to start running with were the best. F# was painful
+  in that regard, and I don't know if I followed best practices by commiting the
+  full project directory. Languages that have an option to compile or interpret
+  were really fun to work with. Having good tools around debugging and IO was
+  also crucial.
+* Assembly is really painful to work with - I'm glad I'm in this industry at a
+  time where our tools are so powerful. I did enjoy feeling like I was seeing
+  how the sausage was made.
+* The most fun I had was when programming felt like it was about reducing the
+  problem to one that's already solved. e.g. using cypher, or the day I used
+  python to generate a c++ program to use the compile's call graph reduction
+  mechanism instead of implementing some kind of computation graph.
+
+Fun problems, good times, and I hope to do this again next year! (but maybe with
+a different twist)
